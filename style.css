@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: var(--cor-da-font);
+}
+:root{
+    --font-principal:"Merriweather", serif;
+    --font-secundaria:"Edu VIC WA NT Beginner", cursive;
+    --cor-da-font: #d3cece;
+}
+header{
+    padding-top: 20px;
+    border-bottom: solid 0.5px aliceblue;
+    
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 50px;
+    font-family: var(--font-principal);
+    color: var(--cor-da-font);
+}
+.nav-bar ul li{
+    display: inline;
+    padding: 8px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--font-principal);
+    color: var(--cor-da-font);
+}
+.nav-bar a:hover{
+    border-bottom: 0.2rem solid grey;
+}
+.container img{
+    height: 50%;
+    padding-right: 16px;
+}
+.container h2{
+    color:var(--cor-da-font);
+    font-size:32px;
+}
+
+.container p{
+    color: var(--cor-da-font);
+    font-size: 18px;
+    padding: 8px;
+    font-family: var(--font-secundaria);
+}
+section .container {
+    align-items: flex-start;
+    
+}
+section{
+    padding: 24px;
+}
+section h2{
+    margin-bottom:16px;
+}
+.sobre{
+    border-bottom: 0.2rem solid grey;
+}
+.produtos{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.produtos h2{
+    color: var(--cor-da-font);
+    font-size: 32px;
+    font-family: var(--font-principal);
+}
+.produtos p{
+    color: var(--cor-da-font);
+    font-family: var(--font-secundaria);
+    font-size: 18px;
+    padding: 16px;
+}
+.produtos img{
+    width: 50%;
+}
+.produtos-1 ,#contact{
+    border-bottom: 0.2rem solid grey;
+}
+.produtos-1 ul li{
+    list-style-type: none;
+}
+.social-links img{
+    height: 24px;
+}
+
+#contact .container{
+    display: block;
+}
+.contact-metodes{
+    display: flex;
+    justify-content:space-between;
+}
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+
+
+    
+}
+form textarea{
+    resize: none;
+    height: 180px;
+}
+form button{
+    background-color:#585a60;
+    color: var(--cor-da-font);
+    border:solid 1px white;
+    cursor: pointer;   
+}
+form button:hover{
+    background-color: #38393d;
+}
+/* isso e para que quando selecionamos um campo as bordas mudem de cor */
+input:focus , textarea:focus{
+    outline-color: var(--cor-da-font);
+}
+#contact h3 ,p{
+    font-family: var(--font-principal);
+    padding: 8px;
+}
+#contact a {
+    text-decoration: none;
+    font-family: var(--font-principal);
+    padding:8px;
+}
+#contact ul li {
+    list-style-type: none;
+    padding: 8px;
+}
+footer{
+    font-family: var(--font-principal);
+    padding: 16px;
+}
